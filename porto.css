@@ -1054,7 +1054,7 @@ a .button-timeline {
 }
 
 .content .dua {
-    background-image: url("img/resize/louvre.jpg");
+    background-image: url("img/resize/ariana.jpg");
     background-size: cover;
     grid-area: gambar-2;
     object-fit: cover;
@@ -1072,7 +1072,7 @@ a .button-timeline {
 }
 
 .content .lima {
-    background-image: url("/navbar_dpm/img/background/bg2.JPG");
+    background-image: url("img/bg2.JPG");
     grid-area: gambar-5;
 }
 
