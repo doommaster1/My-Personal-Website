@@ -419,52 +419,163 @@ button:hover::before {
 }
 
 /* About Me */
-#about {
-    display: grid;
-    background-image: url("img/jim-strasma-byEklXCLOyA-unsplash.jpg");
-    background-size: cover;
-    /* grid-template-columns: repeat(2, 1fr); */
-    background-position: center;
-    padding: 100px 100px 0;
-    align-items: center;
-}
-
-
-
-#about img {
+#about-timeline img {
     border-radius: 50%;
     width: 300px;
     border: 2px solid #fff;
 }
 
-#about .isi {
+#about-timeline .isi {
     line-height: 20px;
     display: flex;
     flex-direction: column;
     text-align: start;
-    justify-content: start;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
 }
 
-#about img {
-    margin-bottom: 20px;
+#about-timeline img {
+    margin-bottom: 25px;
 }
 
-#about h1 {
+#about-timeline h1 {
     padding: 20px 0 25px;
     font-size: 50px;
     font-weight: bolder;
 }
 
-#about h3 {
+#about-timeline h3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+/* diagram */
+.diagram li{
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px  rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    transition: all 0.3s  cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px  rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+}
+
+.bar span{
+    height: 10px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103,103,1)100%);
+}
+
+.fe{
+    width: 90%;
+    animation: fe 3s;
+}
+.phyton{
+    width: 80%;
+    animation: phyton 3s;
+}
+.php{
+    width: 45%;
+    animation: php 3s;
+}
+.sql{
+    width: 60%;
+    animation: sql 3s;
+}
+
+/* Breakpoints */
+#about-timeline .diagram h1{
+    text-align: end;
+    font-size: 20px;
+}
+
+#about-timeline .diagram h3{
+    margin: 5px;
+    text-align: end;
+    font-size: 15px;
+}
+
+
+@keyframes fe {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes phyton {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes php {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+@keyframes sql {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+#about-timeline img {
+    margin-bottom: 20px;
+}
+
+#about-timeline h1 {
+    padding: 20px 0 25px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#about-timeline h3 {
     font-size: 25px;
     font-weight: 600;
     padding-bottom: 15px;
 }
 
-/* diagram */
 
-#about .diagram{
+#about-timeline {
+    display: grid;
+    background-size: cover;
+    grid-template-columns: repeat(2, 1fr);
+    background-position: center;
+    justify-items: center;
+    place-content: center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    width: 100%;
+    align-items: center;
+    background-image: url(img/jim-strasma-byEklXCLOyA-unsplash.jpg);
+}
+
+.biografi{
+    margin-left: 124px;
+}
+
+.diagram{
     text-transform: uppercase;
     width: 400px;
     color: #fff;
@@ -515,16 +626,6 @@ button:hover::before {
     animation: js 3s;
 }
 
-#about .diagram h1{
-    text-align: end;
-    font-size: 20px;
-}
-
-#about .diagram h3{
-    margin: 5px;
-    text-align: end;
-    font-size: 15px;
-}
 
 .button-about{
     padding: 30px 0;
@@ -843,52 +944,21 @@ button:hover::before {
     text-decoration: none;
 }
 
-
-/* skill */
-.skill{
-    margin-top: -20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-    min-height: 263px;
-    background-image: url(img/casey-horner-UJewvfX8SoY-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.skill .logo{
-    padding: 7px;
-}
-
-.skill p{
-    padding: 10px;
-}
-
-.skill .keahlian-judul{
-    grid-column: 1/-1;
-    display: grid;
-    justify-content: center;
-    padding: 15px 0 0 0;
+.judul_about{
     font-size: 35px;
-    font-weight: bolder;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0d0b14;
 }
 
-.skill .keahlian{
+
+a .button-timeline {
     color: #000;
-    border: 1px solid #fff;
-    background-color: #fff;
-    border-radius: 12px;
-    text-align: center;
-    width: 80%;
-    margin: 25px;
 }
 
-.skill .keahlian h1{
-    font-weight: 900;
-    font-size: 16px;
-}
+
 
 /* Gallery */
 #skill{
@@ -933,15 +1003,18 @@ button:hover::before {
 }
 
 .content .title-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     content: "";
     height: 100px;
     width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0), #000);
+    background: #000;
     z-index: 1;
-    transform: translateY(50px);
+    transform: translateY(150px);
     transition: 0.5s ease-in-out;
 }
 
@@ -951,15 +1024,23 @@ button:hover::before {
 }
 
 .content .title{
+    justify-content: center;
     position: absolute;
     width: 100%;
     color: white;
     z-index: 2;
     bottom: 10px;
-    padding: 10px;
+    padding: 10 20px;
     transform: translateY(50px);
     transition: 0.5s ease-in-out;
     cursor: pointer;
+}
+
+.content .title h5{
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
 }
 
 .content .gambar:hover {
@@ -967,7 +1048,7 @@ button:hover::before {
 }
 
 .content .satu {
-    background-image: url("img/resize/space.jpg");
+    background-image: url("img/end\ to\ end.jpg");
     min-height: 550px;
     grid-area: gambar-1;
 }
@@ -986,12 +1067,12 @@ button:hover::before {
 }
 
 .content .empat {
-    background-image: url("img/resize/ariana.jpg");
+    background-image: url("img/kasbonku.jpg");
     grid-area: gambar-4;
 }
 
 .content .lima {
-    background-image: url("img/michela-ampolo-7tDGb3HrITg-unsplash.jpg");
+    background-image: url("/navbar_dpm/img/background/bg2.JPG");
     grid-area: gambar-5;
 }
 
