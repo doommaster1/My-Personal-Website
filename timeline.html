@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="porto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin="crossorigin">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+    href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+    rel='stylesheet'>
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="icon" href="img/logo/rsix.png" type="image/png">
+    <script src="https://code.angularjs.org/1.7.9/angular.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Biodata</h1>
+        <div class="open-nav-menu">
+            <span></span>
+        </div>
+        <div class="menu-overlay"></div>
+        <div class="nav-menu">
+            <div class="close-nav-menu">
+                <i class='bx bx-x'></i>
+            </div>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="porto.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="timeline.html">About Me</a>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="#" data-toggle="sub-menu">Projects</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="/Another_Project/good_skin_club/index.html" target="_blank">Good Skin Club</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/Another_Project/Manchaster_Unity/" target="_blank">Manchaster Unity</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/Another_Project/Travell/index.html" target="_blank">Traveling</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/Another_Project/Concert/coba.html" target="_blank">Concert Website</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="icon">
+            <img src="img/logo_untar.png" alt="" width="80px">
+        </div>
+    </nav>
+    <div class="judul-timeline">
+        <h1>Education Timeline</h1>
+    </div>
+    <div class="timeline">
+        <div class="kontener left-box">
+            <img src="img/logo-jpg/sd.png" alt="">
+            <div class="text-box">
+                <h2>SD Bunda Maria</h2>
+                <small>2018 - 2020</small>
+                <p>SD swasta ini didirikan pertama kali pada tahun 1991. Saat sekarang SD Bunda Maria menggunakan kurikulum belajar SD 2013. SD Bunda Maria memiliki sosok kepala sekolah yang bernama Ruth Latuheru dan operator sekolah Jeanette Yosephine Aprilia</p>
+                <a href="#" class="button-timeline" onclick="togglePopup()">Selengkapnya</a>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-destination1">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <div class="popup-destinasi">
+                    <div class="destinasi-sekolah">
+                        <div class="gambar">
+                            <img src="img/sekolah/sd.jpg" alt="">
+                        </div>
+                        <div class="penjelasan">
+                            <h2>SD Bunda Maria, Depok</h2>
+                            <p>   
+                                SD Bunda Maria adalah sebuah institusi pendidikan SD swasta yang beralamat di Jl. Singgalang Raya Komp. Mekarsari, Kota Depok.
+
+                                SD swasta ini didirikan pertama kali pada tahun 1991. Saat sekarang SD Bunda Maria menggunakan kurikulum belajar SD 2013. SD Bunda Maria memiliki sosok kepala sekolah yang bernama Ruth Latuheru dan operator sekolah Jeanette Yosephine Aprilia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="keuntungan">
+                        <div class="video">
+                            <h5>Video</h5>
+                            <div class="youtube">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5y-LOn5svJ8?si=2jz4__vGBGimQ-Qu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="tentang">
+                            <div class="alamat">
+                                <h5>Alamat</h5>
+                                <p>SD Bunda Maria beralamat di Jl. Singgalang Raya Komp. Mekarsari, Kecamatan Cimanggis, Kota Depok, Jawa Barat.</p>
+                            </div>
+                            <div class="contact">
+                                <h5>Contact</h5>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.instagram.com/sdbundamaria_cimanggis/">
+                                            <i class="bi bi-instagram"></i>
+                                            Instagram
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/sdbm.cimanggisdepok">
+                                            <i class="bi bi-facebook"></i>
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-telephone"></i>
+                                            : 0218721452
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="kontener right-box">
+            <img src="img/logo-jpg/smp.jpg" alt="">
+            <div class="text-box">
+                <h2>SMP Ignatitus Slamet Riyadi</h2>
+                <small>2018 - 2020</small>
+                <p> Sekolah Menengah Pertama Ignatius Slamet Riyadi memiliki kod NPSN 20107089. Pada 2010, SMP Ignatius Slamet Riyadi memiliki 93 pelajar lelaki dan 64 pelajar perempuan, menjadikan jumlah keseluruhan murid 157 orang.</p>
+                <a href="#" class="button-timeline" onclick="togglePopup2()">Selengkapnya</a>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-destination2">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup2()">&times;</div>
+                <div class="popup-destinasi">
+                    <div class="destinasi-sekolah">
+                        <div class="gambar">
+                            <img src="img/sekolah/smp.jpeg" alt="">
+                        </div>
+                        <div class="penjelasan">
+                            <h2>SMP Ignatius Slamet Riyadi, Jakarta Timur</h2>
+                            <p>   
+                                Sekolah Menengah Pertama Ignatius Slamet Riyadi atau nama ringkasnya SMP Ignatius Slamet Riyadi, merupakan sebuah Sekolah Menengah Pertama Swasta yang terletak di Jl. Raya Bogor Km. 24, Cijantung Jakarta Timur, Indonesia.
+
+                                Sekolah Menengah Pertama Ignatius Slamet Riyadi memiliki kod NPSN 20107089. Pada 2010, SMP Ignatius Slamet Riyadi memiliki 93 pelajar lelaki dan 64 pelajar perempuan, menjadikan jumlah keseluruhan murid 157 orang. 2010
+                            </p>
+                        </div>
+                    </div>
+                    <div class="keuntungan">
+                        <div class="video">
+                            <h5>Video</h5>
+                            <div class="youtube">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dw1QnALLjUk?si=_GHukxN822XbWwQN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>  
+                        </div>
+                        <div class="tentang">
+                            <div class="alamat">
+                                <h5>Alamat</h5>
+                                <p>Jl. Raya Bogor Km. 24, Cijantung Jakarta Timur, Indonesia.</p>
+                            </div>
+                            <div class="contact">
+                                <h5>Contact</h5>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.instagram.com/smp.ignslametriyadi/?hl=id">
+                                            <i class="bi bi-instagram"></i>
+                                            Instagram
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/pages/Smp-Ignatius-Slamet-Riyadi-Cijantung/499495140134128">
+                                            <i class="bi bi-facebook"></i>
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-telephone"></i>
+                                            : 021-8403545
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="kontener left-box">
+            <img src="img/logo-jpg/sma.jpeg" alt="">
+            <div class="text-box">
+                <h2>SMA Ignatius Slamet Riyadi</h2>
+                <small>2018 - 2020</small>
+                <p>Sekolah Menengah Atas Ignatius Slamet Riyadi atau nama ringkasnya SMA Ignatius Slamet Riyadi</p>
+                <a href="#" class="button-timeline" onclick="togglePopup3()">Selengkapnya</a>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <div class="popup" id="popup-destination3">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup3()">&times;</div>
+                <div class="popup-destinasi">
+                    <div class="destinasi-sekolah">
+                        <div class="gambar">
+                            <img src="img/sekolah/sma.jpeg" alt="">
+                        </div>
+                        <div class="penjelasan">
+                            <h2>SMA Ignatius Slamet Riyadi, Jakarta Timur</h2>
+                            <p>   
+                                Sekolah Menengah Atas Ignatius Slamet Riyadi atau nama ringkasnya SMA Ignatius Slamet Riyadi, merupakan sebuah Sekolah Menengah Atas Swasta yang terletak di Jl. Raya Bogor Km. 24, Cijantung Jakarta Timur, Indonesia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="keuntungan">
+                        <div class="video">
+                            <h5>Video</h5>
+                            <div class="youtube">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5dXKanw-JXw?si=d1BJUomxsPQvl2Sp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            
+                        </div>
+                        <div class="tentang">
+                            <div class="alamat">
+                                <h5>Alamat</h5>
+                                <p>Jl. Raya Bogor Km. 24, Cijantung Jakarta Timur, Indonesia.</p>
+                            </div>
+                            <div class="contact">
+                                <h5>Contact</h5>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.instagram.com/smp.ignslametriyadi/?hl=id">
+                                            <i class="bi bi-instagram"></i>
+                                            Instagram
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/pages/Smp-Ignatius-Slamet-Riyadi-Cijantung/499495140134128">
+                                            <i class="bi bi-facebook"></i>
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-telephone"></i>
+                                            : 021-8403545
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        
+        <div class="kontener right-box">
+            <img src="img/logo-jpg/kuliah.jpeg" alt="">
+            <div class="text-box">
+                <h2>Universitas Tarumanagara</h2>
+                <small>2022 - 2026</small>
+                <p> Universitas Tarumanagara merupakan salah satu perguruan tinggi terbaik se-Indonesia yang dikenal dengan nama UNTAR.</p>
+                <a href="#" class="button-timeline" onclick="togglePopup4()">Selengkapnya</a>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+        <div class="popup" id="popup-destination4">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglePopup4()">&times;</div>
+                <div class="popup-destinasi">
+                    <div class="destinasi-sekolah">
+                        <div class="gambar">
+                            <img src="img/sekolah/kampus.jpg" alt="">
+                        </div>
+                        <div class="penjelasan">
+                            <h2>Universitas Tarumanagara, Jakarta Barat</h2>
+                            <p>   
+                                Universitas Tarumanagara merupakan salah satu perguruan tinggi terbaik se-Indonesia yang dikenal dengan nama UNTAR. Kini Universitas Tarumanagara memiliki 3 lokasi kampus yakni Kampus 1 beralat di Jalan Letjen. S.Parman No.1, Kampus 2 beralamat di Jalan Tanjung Duren Utara No.1, dan Kampus 3 beralamat di Jalan Cilandak KKO No. 1 Ragunan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="keuntungan">
+                        <div class="video">
+                            <h5>Video</h5>
+                            <div class="youtube">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WEaLQvjUWxo?si=fbTGJqfezWJUKdVJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            
+                        </div>
+                        <div class="tentang">
+                            <div class="alamat">
+                                <h5>Alamat</h5>
+                                <p>Jalan Letjen. S.Parman No.1, Kampus 2 beralamat di Jalan Tanjung Duren Utara No.1, dan Kampus 3 beralamat di Jalan Cilandak KKO No. 1 Ragunan.</p>
+                            </div>
+                            <div class="contact">
+                                <h5>Contact</h5>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.instagram.com/untarjakarta/?hl=id">
+                                            <i class="bi bi-instagram"></i>
+                                            Instagram
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/untarjakarta">
+                                            <i class="bi bi-facebook"></i>
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-telephone"></i>
+                                            : 021 - 56958723
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <!-- About me -->
+      <div class="judul-about">
+        <h1>About Me</h1>
+      </div>
+     <div id="about-timeline">
+        <div class="biografi">
+            <div class="gambar">
+                <img src="img/saya-removebg-preview.png" alt="anthony">
+            </div>
+
+            <div class="isi">
+                <h3>Mahasiswa Teknik Informatika</h3>
+                <h4>Universitas Tarumanagara</h4>
+            </div>
+        </div>
+
+        <div class="diagram">
+            <h1>My Skill</h1>
+            <li><h3>HTML</h3>
+                <span class="bar"><span class="html"></span></span>
+            </li>
+            <li><h3>CSS</h3>
+                <span class="bar"><span class="css"></span></span>
+            </li>
+            <li><h3>PHP</h3>
+                <span class="bar"><span class="php"></span></span>
+            </li>
+            <li><h3>JavaScript</h3>
+                <span class="bar"><span class="js"></span></span>
+            </li>
+        </div>
+        <div id="skill"></div>
+    </div>       
+
+    <!-- FAQ -->
+        <div class="faq">
+            <div class="faq-penjelasan">
+                <h1>FAQ</h1>
+                <p>Merupakan kumpulan jawaban dari pertanyaan yang sering ditanyakan terhadap saya mengenai bidang saya sebagai FrontEnd Developement. Anda hanya perlu memasukkan kata kunci seperti keahlian, proyek, dan lainnya lalu meng-clik icon panah disamping textbox untuk menemukan informasi yang Anda butuhkan dengan cepat. Dengan fitur ini, Anda dapat menghemat waktu dan mendapatkan jawaban yang relevan dengan mudah.</p>
+            </div>
+            
+        <div class="input">
+            <div ng-app="pertanyaan" ng-controller="controller" class="input2">
+            
+                <div class="search-box">
+                    <input type="text" ng-model="searchName" placeholder="Masukan Pertanyaan">
+                    <button ng-click="search()">
+                        <i class='bx bxs-send'></i>
+                    </button>
+                </div> 
+
+                <ul>
+                    <li ng-repeat="pertanyaan in hasil">
+                        <p> <span class="warna">Question : </span>
+                            {{ pertanyaan.question}}
+                        </p>
+                        <p><span class="warna">Answer :</span> <br>
+                            {{ pertanyaan.answer }}</p>
+                        <br>
+                    </li>
+                    <li ng-if="showNoResultsMessage" style="color: red;">Tidak ada hasil pencarian</li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Container -->
+    <footer>
+        <div class="konten">
+            <div class="nama">
+                <h1>Stefanus Anthony</h1>
+            </div>
+            <p>Terimakasih telah berkunjung ke Website saya. Untuk keperluan bisnis silahkan
+                meng-clik icon dibawah atau hubungi nomor dibawah ini:</p>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/stefanthony007/">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://web.facebook.com/stefanus.anthony.7/">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/stefanus-anthony-667216218/">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="telp">
+                <p>
+                    <i class="bi bi-telephone-fill"></i>
+                    : 085890360056</p>
+            </div>
+            <div class="copy-right">
+                Copy-Right by Stefanus Anthony
+            </div>
+
+        </div>
+
+    </footer>
+     <script src="porto.js"></script>
+     <script>
+        document.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+
+            if (window.scrollY > 0) {
+                nav
+                    .classList
+                    .add('scrolled');
+            } else {
+                nav
+                    .classList
+                    .remove('scrolled')
+            }
+        })
+    </script>
+    <script>
+        var app = angular.module('pertanyaan', []);
+        app.controller('controller', function ($scope) {
+            $scope.trains = [
+                    {
+                        question: 'Dimana anda berkuliah?',
+                        answer: 'Universitas Tarumanagara'
+                    }, {
+                        question: 'Apakah Anda memiliki contoh proyek atau portofolio yang dapat saya lihat?',
+                        answer: 'Tentu, Anda dapat melihat beberapa proyek yang telah saya kerjakan di navbar section "Project" di situs web saya. Di sana Anda akan menemukan berbagai proyek yang mencakup desain web, pengembangan aplikasi, dan lain-lain.'
+                    }, {
+                        question: 'Berapa lama waktu yang diperlukan untuk menyelesaikan sebuah proyek?',
+                        answer: 'Waktu penyelesaian proyek sangat bergantung pada kompleksitas dan skala proyek tersebut. Proyek sederhana mungkin memerlukan beberapa minggu, sementara proyek yang lebih kompleks bisa memakan waktu beberapa bulan. Setelah berdiskusi mengenai kebutuhan spesifik Anda, saya dapat memberikan estimasi waktu yang lebih akurat'
+                    }, {
+                        question: 'Bagaimana cara saya menghubungi Anda untuk proyek baru?',
+                        answer: 'Anda dapat menghubungi saya melalui media sosial yang tertera di bagian bawah halaman.'
+                    }, {
+                        question: 'Apa saja layanan yang Anda tawarkan',
+                        answer: 'Saya menawarkan berbagai layanan, termasuk desain web, pengembangan web, pengembangan aplikasi mobile, branding dan identitas visual, serta konsultasi teknis.'
+                    }
+                ];
+
+                $scope.search = function () {
+                    var searchTerms = $scope
+                        .searchName
+                        .toLowerCase()
+                        .split(' ');
+
+                    var isWhitespaceSearch = searchTerms.every(function (term) {
+                        return term.trim() === '';
+                    });
+
+                    if (isWhitespaceSearch) {
+                        $scope.hasil = [];
+                    } else {
+                        $scope.hasil = $scope
+                            .trains
+                            .filter(function (pertanyaan) {
+                                var namaLowerCase = pertanyaan
+                                    .question
+                                    .toLowerCase();
+                                return searchTerms.some(function (term) {
+                                    return namaLowerCase.includes(term);
+                                });
+                            });
+                    }
+
+                    $scope.showNoResultsMessage = $scope.hasil.length === 0 && !isWhitespaceSearch;
+                };
+
+            $scope.search = function () {
+                var searchTerms = $scope
+                    .searchName
+                    .toLowerCase()
+                    .split(' ');
+
+                var isWhitespaceSearch = searchTerms.every(function (term) {
+                    return term.trim() === '';
+                });
+
+                if (isWhitespaceSearch) {
+                    $scope.hasil = [];
+                } else {
+                    $scope.hasil = $scope
+                        .trains
+                        .filter(function (pertanyaan) {
+                            var namaLowerCase = pertanyaan
+                                .question
+                                .toLowerCase();
+                            return searchTerms.some(function (term) {
+                                return namaLowerCase.includes(term);
+                            });
+                        });
+                }
+
+                $scope.showNoResultsMessage = $scope.hasil.length === 0 && !isWhitespaceSearch;
+            };
+        });
+    </script>
+</body>
+</html>
