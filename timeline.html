@@ -45,16 +45,19 @@
                     <a href="#" data-toggle="sub-menu">Projects</a>
                     <ul class="sub-menu">
                         <li class="menu-item">
-                            <a href="/Another_Project/good_skin_club/index.html" target="_blank">Good Skin Club</a>
+                            <a href="https://app.powerbi.com/groups/me/reports/31f64ae0-6c32-4940-8206-0496522664ed?ctid=a1647c30-a45b-4fe3-8881-dd686a25b476&pbi_source=linkShare" target="_blank">Dashboard Analisis</a>
                         </li>
                         <li class="menu-item">
-                            <a href="/Another_Project/Manchaster_Unity/" target="_blank">Manchaster Unity</a>
+                            <a href="https://doommaster1.github.io/DPM-FTI/" target="_blank">Template DPM FTI</a>
                         </li>
                         <li class="menu-item">
-                            <a href="/Another_Project/Travell/index.html" target="_blank">Traveling</a>
+                            <a href="https://doommaster1.github.io/Project_Manchaster-Unity/" target="_blank">Manchaster Unity</a>
                         </li>
                         <li class="menu-item">
-                            <a href="/Another_Project/Concert/coba.html" target="_blank">Concert Website</a>
+                            <a href="https://doommaster1.github.io/Concert_Website/" target="_blank">Concert Website</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://github.com/valeroy51/KasBonKu" target="_blank">KasbonKu</a>
                         </li>
                     </ul>
                 </li>
@@ -102,7 +105,7 @@
                         <div class="video">
                             <h5>Video</h5>
                             <div class="youtube">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5y-LOn5svJ8?si=2jz4__vGBGimQ-Qu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe id="video-frame" width="100%" height="100%" src="https://www.youtube.com/embed/5y-LOn5svJ8?si=2jz4__vGBGimQ-Qu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div class="tentang">
@@ -356,29 +359,27 @@
 
 
     <!-- FAQ -->
-        <div class="faq">
-            <div class="faq-penjelasan">
-                <h1>FAQ</h1>
-                <p>Merupakan kumpulan jawaban dari pertanyaan yang sering ditanyakan terhadap saya mengenai bidang saya sebagai FrontEnd Developement. Anda hanya perlu memasukkan kata kunci seperti keahlian, proyek, dan lainnya lalu meng-clik icon panah disamping textbox untuk menemukan informasi yang Anda butuhkan dengan cepat. Dengan fitur ini, Anda dapat menghemat waktu dan mendapatkan jawaban yang relevan dengan mudah.</p>
-            </div>
-            
+    <div class="faq">
+        <div class="faq-penjelasan">
+            <h1>FAQ</h1>
+            <p>Merupakan kumpulan jawaban dari pertanyaan yang sering ditanyakan terhadap saya mengenai bidang saya sebagai FrontEnd Development. Anda hanya perlu memasukkan kata kunci seperti keahlian, proyek, dan lainnya untuk menemukan informasi yang Anda butuhkan dengan cepat. Dengan fitur ini, Anda dapat menghemat waktu dan mendapatkan jawaban yang relevan dengan mudah.</p>
+        </div>
+    
         <div class="input">
             <div ng-app="pertanyaan" ng-controller="controller" class="input2">
-            
                 <div class="search-box">
-                    <input type="text" ng-model="searchName" placeholder="Masukan Pertanyaan">
-                    <button ng-click="search()">
-                        <i class='bx bxs-send'></i>
-                    </button>
+                    <input type="text" ng-model="searchName" placeholder="Masukan Pertanyaan" ng-change="search()">
+                    <!-- Hapus tombol jika tidak diperlukan -->
                 </div> 
-
+    
                 <ul>
                     <li ng-repeat="pertanyaan in hasil">
                         <p> <span class="warna">Question : </span>
-                            {{ pertanyaan.question}}
+                            {{ pertanyaan.question }}
                         </p>
                         <p><span class="warna">Answer :</span> <br>
-                            {{ pertanyaan.answer }}</p>
+                            {{ pertanyaan.answer }}
+                        </p>
                         <br>
                     </li>
                     <li ng-if="showNoResultsMessage" style="color: red;">Tidak ada hasil pencarian</li>
@@ -446,77 +447,42 @@
         var app = angular.module('pertanyaan', []);
         app.controller('controller', function ($scope) {
             $scope.trains = [
-                    {
-                        question: 'Dimana anda berkuliah?',
-                        answer: 'Universitas Tarumanagara'
-                    }, {
-                        question: 'Apakah Anda memiliki contoh proyek atau portofolio yang dapat saya lihat?',
-                        answer: 'Tentu, Anda dapat melihat beberapa proyek yang telah saya kerjakan di navbar section "Project" di situs web saya. Di sana Anda akan menemukan berbagai proyek yang mencakup desain web, pengembangan aplikasi, dan lain-lain.'
-                    }, {
-                        question: 'Berapa lama waktu yang diperlukan untuk menyelesaikan sebuah proyek?',
-                        answer: 'Waktu penyelesaian proyek sangat bergantung pada kompleksitas dan skala proyek tersebut. Proyek sederhana mungkin memerlukan beberapa minggu, sementara proyek yang lebih kompleks bisa memakan waktu beberapa bulan. Setelah berdiskusi mengenai kebutuhan spesifik Anda, saya dapat memberikan estimasi waktu yang lebih akurat'
-                    }, {
-                        question: 'Bagaimana cara saya menghubungi Anda untuk proyek baru?',
-                        answer: 'Anda dapat menghubungi saya melalui media sosial yang tertera di bagian bawah halaman.'
-                    }, {
-                        question: 'Apa saja layanan yang Anda tawarkan',
-                        answer: 'Saya menawarkan berbagai layanan, termasuk desain web, pengembangan web, pengembangan aplikasi mobile, branding dan identitas visual, serta konsultasi teknis.'
-                    }
-                ];
-
-                $scope.search = function () {
-                    var searchTerms = $scope
-                        .searchName
-                        .toLowerCase()
-                        .split(' ');
-
-                    var isWhitespaceSearch = searchTerms.every(function (term) {
-                        return term.trim() === '';
-                    });
-
-                    if (isWhitespaceSearch) {
-                        $scope.hasil = [];
-                    } else {
-                        $scope.hasil = $scope
-                            .trains
-                            .filter(function (pertanyaan) {
-                                var namaLowerCase = pertanyaan
-                                    .question
-                                    .toLowerCase();
-                                return searchTerms.some(function (term) {
-                                    return namaLowerCase.includes(term);
-                                });
-                            });
-                    }
-
-                    $scope.showNoResultsMessage = $scope.hasil.length === 0 && !isWhitespaceSearch;
-                };
-
+                {
+                    question: 'Dimana anda berkuliah?',
+                    answer: 'Universitas Tarumanagara'
+                }, {
+                    question: 'Apakah Anda memiliki contoh proyek atau portofolio yang dapat saya lihat?',
+                    answer: 'Tentu, Anda dapat melihat beberapa proyek yang telah saya kerjakan di navbar section "Project" di situs web saya. Di sana Anda akan menemukan berbagai proyek yang mencakup desain web, pengembangan aplikasi, dan lain-lain.'
+                }, {
+                    question: 'Berapa lama waktu yang diperlukan untuk menyelesaikan sebuah proyek?',
+                    answer: 'Waktu penyelesaian proyek sangat bergantung pada kompleksitas dan skala proyek tersebut. Proyek sederhana mungkin memerlukan beberapa minggu, sementara proyek yang lebih kompleks bisa memakan waktu beberapa bulan. Setelah berdiskusi mengenai kebutuhan spesifik Anda, saya dapat memberikan estimasi waktu yang lebih akurat'
+                }, {
+                    question: 'Bagaimana cara saya menghubungi Anda untuk proyek baru?',
+                    answer: 'Anda dapat menghubungi saya melalui media sosial yang tertera di bagian bawah halaman.'
+                }, {
+                    question: 'Apa saja layanan yang Anda tawarkan',
+                    answer: 'Saya menawarkan berbagai layanan, termasuk desain web, pengembangan web, pengembangan aplikasi mobile, branding dan identitas visual, serta konsultasi teknis.'
+                }
+            ];
+    
             $scope.search = function () {
-                var searchTerms = $scope
-                    .searchName
-                    .toLowerCase()
-                    .split(' ');
-
+                var searchTerms = $scope.searchName.toLowerCase().split(' ');
+    
                 var isWhitespaceSearch = searchTerms.every(function (term) {
                     return term.trim() === '';
                 });
-
+    
                 if (isWhitespaceSearch) {
                     $scope.hasil = [];
                 } else {
-                    $scope.hasil = $scope
-                        .trains
-                        .filter(function (pertanyaan) {
-                            var namaLowerCase = pertanyaan
-                                .question
-                                .toLowerCase();
-                            return searchTerms.some(function (term) {
-                                return namaLowerCase.includes(term);
-                            });
+                    $scope.hasil = $scope.trains.filter(function (pertanyaan) {
+                        var namaLowerCase = pertanyaan.question.toLowerCase();
+                        return searchTerms.some(function (term) {
+                            return namaLowerCase.includes(term);
                         });
+                    });
                 }
-
+    
                 $scope.showNoResultsMessage = $scope.hasil.length === 0 && !isWhitespaceSearch;
             };
         });

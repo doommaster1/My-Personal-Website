@@ -64,9 +64,20 @@
   
   })();
 
-  function togglePopup(){
-    document.getElementById("popup-destination1").classList.toggle("active");
-  }
+  function togglePopup() {
+    var popup = document.getElementById("popup-destination1");
+    var iframe = document.getElementById("video-frame");
+
+    popup.classList.toggle("active");
+
+    if (popup.classList.contains("active")) {
+        // Set src from data-src attribute when popup is active
+        iframe.src = iframe.getAttribute("data-src");
+    } else {
+        // Clear src to stop video playback when popup is closed
+        iframe.src = "";
+    }
+}
   
 
   function togglePopup2(){
