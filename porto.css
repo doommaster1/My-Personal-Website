@@ -1000,47 +1000,50 @@ a .button-timeline {
     object-fit: cover;
     overflow: hidden;
     position: relative;
+    transition: 0.4s ease-in-out;
 }
 
-.content .title-box{
+/* Sesuaikan ukuran dan posisi .title-box agar menutupi seluruh gambar */
+.content .title-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    content: "";
-    height: 100px;
-    width: 100%;
+    justify-content: center;
+    height: 100%; /* Perluas agar mencakup tinggi penuh gambar */
+    width: 100%; /* Perluas agar mencakup lebar penuh gambar */
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #000;
+    background: rgba(0, 0, 0, 0.8); /* Menambahkan sedikit transparansi agar konten di bawahnya masih sedikit terlihat */
     z-index: 1;
-    transform: translateY(150px);
+    transform: translateY(100%); /* Awal di luar gambar */
     transition: 0.5s ease-in-out;
 }
 
-.content .gambar:hover .title,
-.content .gambar:hover .title-box{
-    transform: translateY(0);
-}
-
-.content .title{
+/* Pastikan .title berada di dalam .title-box */
+.content .title {
     justify-content: center;
-    position: absolute;
-    width: 100%;
     color: white;
     z-index: 2;
-    bottom: 10px;
-    padding: 10 20px;
-    transform: translateY(50px);
+    padding: 20px;
+    text-align: center;
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
 
-.content .title h5{
+/* Saat di-hover, .title-box dan .title tampil sepenuhnya */
+.content .gambar:hover .title-box,
+.content .gambar:hover .title {
+    transform: translateY(0);
+}
+
+/* Sesuaikan padding dan font-size untuk .title h5 */
+.content .title h5 {
     padding-top: 5px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 15px;
+    line-height: 18px;
+    text-align: center;
 }
 
 .content .gambar:hover {
@@ -1312,10 +1315,6 @@ footer .copy-right {
         min-height: 500px;
     }
 
-    /* nav {
-        overflow: hidden;
-    } */
-
     .home {
         height: 600px;
         width: 100%;
@@ -1345,8 +1344,6 @@ footer .copy-right {
         justify-content: center;
         margin: 0 auto;
     }
-
-    
 
     /* about */
     #about {
@@ -1383,10 +1380,6 @@ footer .copy-right {
         background-color: #df0347;
     }
 
-    .gallery .content {
-        margin: 20px;
-        grid-template-areas: 'gambar-1 gambar-1' 'gambar-2 gambar-3' 'gambar-4 gambar-5';
-    }
 
     .content .satu {
         min-height: 250px;
@@ -1397,6 +1390,34 @@ footer .copy-right {
     .tiga .empat {
         min-height: 150px;
     }
+
+ /* Ponsel */
+ .gallery .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Tambahkan jarak antar gambar */
+}
+
+.content .gambar {
+    min-height: 250px; /* Sesuaikan tinggi pada ponsel */
+    width: 100%; /* Pastikan gambar memenuhi lebar kontainer */
+}
+
+
+
+.content .title {
+justify-content: center;
+color: white;
+padding: 20px;
+text-align: center;
+transition: 0.5s ease-in-out;
+cursor: pointer;
+}
+
+.content .gambar:hover .title-box,
+.content .gambar:hover .title {
+transform: translateY(0);
+}
 
     /* footer */
     footer .konten p{
@@ -1409,4 +1430,99 @@ footer .copy-right {
     }
 }
 
+
+@media (max-width: 768px) {
+    #about-timeline {
+        grid-template-columns: 1fr;
+        padding: 50px 0;
+    }
+    
+    .biografi {
+        margin: 0;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+        width: 85%;
+    }
+
+    .diagram {
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    #about-timeline h1 {
+        font-size: 35px;
+    }
+
+    #about-timeline h3 {
+        font-size: 20px;
+    }
+
+    .button-about {
+        padding: 20px 0;
+    }
+}
+
+/* Mobile (480px ke bawah) */
+@media (max-width: 480px) {
+    #about-timeline {
+        grid-template-columns: 1fr;
+        padding: 30px 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    .biografi{
+        width: 75%;
+        justify-items: center;
+    }
+
+    .biografi .gambar img {
+        width: 200px;
+    }
+
+    #about-timeline h1 {
+        font-size: 30px;
+    }
+
+    #about-timeline h3 {
+        font-size: 18px;
+    }
+
+    .diagram {
+        width: 70%;
+        margin: 0 auto;
+        padding: 15px;
+        justify-items: center;
+    }
+
+
+    .diagram li h3 {
+        font-size: 14px;
+    }
+
+    .bar {
+        height: 8px;
+    }
+
+    .button-about {
+        padding: 10px 0;
+    }
+
+    .timeline {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .judul-timeline {
+        font-size: 28px;
+    }
+
+    .timeline .kontener {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 

@@ -6,6 +6,7 @@
         <title>Portofolio</title>
         <link rel="stylesheet" href="porto.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
@@ -83,7 +84,9 @@
                 <h1>About Me</h1>
             </div>
                 <div id="about-timeline">
-                    <div class="biografi">
+                    <div data-aos="fade-up"
+                    data-aos-delay="700"
+                    data-aos-offset="0" class="biografi">
                         <div class="gambar">
                             <img src="img/saya-removebg-preview.png" alt="anthony">
                         </div>
@@ -102,7 +105,10 @@
                         </div>
                     </div>
 
-                    <div class="diagram">
+                    <div data-aos="fade-up"
+                    data-aos-delay="700"
+                    data-aos-offset="0" 
+                    class="diagram">
                         <h1>My Skill</h1>
                         <li><h3>HTML, CSS, JS</h3>
                             <span class="bar"><span class="fe"></span></span>
@@ -121,7 +127,10 @@
             
 
             <!-- Gallery -->
-            <div class="gallery">
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="linear"
+            data-aos-delay="800"
+            data-aos-offset="0" class="gallery">
                 <div class="hobby">
                     Projects
                 </div>
@@ -266,5 +275,9 @@
                 }
             })
         </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>
