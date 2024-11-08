@@ -134,7 +134,7 @@ body {
     color: #fff;
     box-sizing: border-box;
     list-style: none;
-    
+    width: 100%;
 }
 
 body a {
@@ -482,15 +482,15 @@ button:hover::before {
     animation: fe 3s;
 }
 .phyton{
-    width: 80%;
+    width: 75%;
     animation: phyton 3s;
 }
 .php{
-    width: 45%;
+    width: 70%;
     animation: php 3s;
 }
 .sql{
-    width: 60%;
+    width: 80%;
     animation: sql 3s;
 }
 
@@ -528,7 +528,7 @@ button:hover::before {
         width: 0%;
     }
     100%{
-        width: 45%;
+        width: 75%;
     }
 }
 @keyframes sql {
@@ -618,7 +618,7 @@ button:hover::before {
     animation: css 3s;
 }
 .php{
-    width: 45%;
+    width: 75%;
     animation: php 3s;
 }
 .js{
@@ -652,7 +652,7 @@ button:hover::before {
         width: 0%;
     }
     100%{
-        width: 45%;
+        width: 75%;
     }
 }
 @keyframes js {
@@ -957,8 +957,6 @@ button:hover::before {
 a .button-timeline {
     color: #000;
 }
-
-
 
 /* Gallery */
 #skill{
@@ -1463,6 +1461,50 @@ transform: translateY(0);
     .button-about {
         padding: 20px 0;
     }
+
+    .popup-destinasi{
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+    }
+
+    .popup .destinasi-sekolah{
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 600px;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+        
+      }
+
+      .popup .close-btn{
+        z-index: 999;
+      }
+
+
+    .keuntungan {
+        grid-template-columns: 1fr; /* Mengubah menjadi satu kolom */
+        grid-template-areas:
+            'fasilitas'
+            'tentang';
+        text-align: center; /* Agar lebih rapi di layar kecil */
+    }
+
+    .keuntungan .video .youtube {
+        width: 100%; /* Agar video menyesuaikan dengan lebar kontainer */
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .keuntungan .tentang {
+        text-align: center;
+        align-items: start; /* Membuat konten di tengah */
+    }
+
+    .keuntungan .tentang .alamat{
+        margin-bottom: 35px;
+    }
 }
 
 /* Mobile (480px ke bawah) */
@@ -1523,6 +1565,19 @@ transform: translateY(0);
     .timeline .kontener {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .popup .content {
+        width: 90vw; /* Mengurangi ukuran popup pada layar yang sangat kecil */
+        height: 90vh;
+    }
+    
+    .keuntungan {
+        padding: 10px; /* Mengurangi padding untuk layar yang lebih kecil */
+        margin: 10px auto;
+    }
+
+    .popup .destinasi-sekolah {
+        grid-template-columns: 1fr; /* Mengubah destinasi-sekolah menjadi satu kolom */
     }
 }
 
