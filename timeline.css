@@ -84,6 +84,11 @@
   }
 
 @media (max-width:768px) {
+    .timeline{
+      width: 100%;
+      overflow: hidden;
+    }
+
     #about-timeline {
         grid-template-columns: 1fr;
         display: grid;

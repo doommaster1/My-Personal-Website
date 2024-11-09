@@ -1350,6 +1350,7 @@ footer .copy-right {
         width: fit-content;
         text-align: center;
         padding: 30px;
+        overflow: hidden;
         /* justify-content: center; */
     }
 
@@ -1401,8 +1402,6 @@ footer .copy-right {
     width: 100%; /* Pastikan gambar memenuhi lebar kontainer */
 }
 
-
-
 .content .title {
 justify-content: center;
 color: white;
@@ -1433,6 +1432,8 @@ transform: translateY(0);
     #about-timeline {
         grid-template-columns: 1fr;
         padding: 50px 0;
+        overflow: hidden;
+        width: 100%;
     }
     
     .biografi {
@@ -1462,10 +1463,10 @@ transform: translateY(0);
         padding: 20px 0;
     }
 
+
     .popup-destinasi{
         overflow: hidden;
         width: 100%;
-        margin: 0;
     }
 
     .popup .destinasi-sekolah{
